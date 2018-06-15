@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action = "/" method = "post">
+	First Number: <input type ="number" name = "firstNumber" required><br>
+	<select name = "operation">
+  		<option value="+">+</option>
+  		<option value="-">-</option>
+  		<option value="*">*</option>
+  		<option value="/" >/</option>
+  		<option value="^" >^</option>
+	</select><br>
+	Second Number: <input type ="number" name = "secondNumber" required><br>
+	<input type = "submit" value = "Submit">
+	</form>
+	<h2>Result</h2>
+	<!--{{#firstNumber}} -->
+	<!--{{firstNumber}} -->
+	<!--{{operation}} -->
+	<!--{{secondNumber}} -->
+	<!--= {{result}} -->
+	<!--{{/firstNumber}} -->
+	
+	{{#history}}
+		{{.}} <br>
+	{{/history}}
+	
+
+</body>
+</html>
