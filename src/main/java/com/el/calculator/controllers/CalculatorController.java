@@ -35,7 +35,7 @@ public class CalculatorController {
 			mv.addObject("secondNumber", secondNumber);
 			
 			c.calculator(firstNumber, secondNumber, operation);
-			int result = c.calculator(firstNumber, secondNumber, operation);
+			double result = c.calculator(firstNumber, secondNumber, operation);
 			
 			String hist = firstNumber + " " + operation + " "+ secondNumber +"=" + result;
 			history.add(0, hist);
